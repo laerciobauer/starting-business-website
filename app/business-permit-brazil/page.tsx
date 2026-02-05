@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "How to Get a Business Permit - Brazilian Business License Guide",
     description:
       "Complete guide on obtaining all necessary business permits and licenses in Brazil for legal business operations.",
-    url: "https://startingabusinessinbrazil.com/services/business-permit-brazil",
+    url: "https://startingabusinessinbrazil.com/business-permit-brazil",
   },
 };
 
@@ -172,7 +172,7 @@ export default function BusinessPermitPage() {
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
-                  <Link href="/services/obtain-cnpj-brazil">
+                  <Link href="/obtain-cnpj-brazil">
                     <Button size="lg" variant="outline">
                       CNPJ First
                     </Button>
@@ -505,7 +505,7 @@ export default function BusinessPermitPage() {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     <Link
-                      href="/services/formalize-company-brazil"
+                      href="/formalize-company-brazil"
                       className="hover:text-orange-600"
                     >
                       Steps to Formalize a Company
@@ -515,7 +515,7 @@ export default function BusinessPermitPage() {
                     Complete company registration process before applying for
                     permits.
                   </p>
-                  <Link href="/services/formalize-company-brazil">
+                  <Link href="/formalize-company-brazil">
                     <Button variant="outline" size="sm">
                       Learn More <ArrowRight className="w-4 h-4 ml-1" />
                     </Button>
@@ -527,7 +527,7 @@ export default function BusinessPermitPage() {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     <Link
-                      href="/services/obtain-cnpj-brazil"
+                      href="/obtain-cnpj-brazil"
                       className="hover:text-orange-600"
                     >
                       How to obtain a CNPJ
@@ -537,7 +537,7 @@ export default function BusinessPermitPage() {
                     CNPJ registration is required before applying for business
                     permits.
                   </p>
-                  <Link href="/services/obtain-cnpj-brazil">
+                  <Link href="/obtain-cnpj-brazil">
                     <Button variant="outline" size="sm">
                       Learn More <ArrowRight className="w-4 h-4 ml-1" />
                     </Button>
@@ -549,7 +549,7 @@ export default function BusinessPermitPage() {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     <Link
-                      href="/services/cost-start-business-brazil"
+                      href="/cost-start-business-brazil"
                       className="hover:text-orange-600"
                     >
                       Cost to Start Business in Brazil
@@ -559,7 +559,7 @@ export default function BusinessPermitPage() {
                     Complete cost analysis including all permit and licensing
                     fees.
                   </p>
-                  <Link href="/services/cost-start-business-brazil">
+                  <Link href="/cost-start-business-brazil">
                     <Button variant="outline" size="sm">
                       Learn More <ArrowRight className="w-4 h-4 ml-1" />
                     </Button>

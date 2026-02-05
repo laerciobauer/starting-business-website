@@ -1,22 +1,21 @@
+"use client";
 
-'use client'
-
-import { useState } from 'react'
-import Link from 'next/link'
-import { Menu, X, ChevronDown } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [servicesOpen, setServicesOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   const services = [
-    { name: 'Steps to Formalize a Company', href: '/services/formalize-company-brazil' },
-    { name: 'How to open a Company', href: '/services/open-company-brazil' },
-    { name: 'How to obtain a CNPJ', href: '/services/obtain-cnpj-brazil' },
-    { name: 'How to Get a Business Permit', href: '/services/business-permit-brazil' },
-    { name: 'Cost to Start Business', href: '/services/cost-start-business-brazil' }
-  ]
+    { name: "Steps to Formalize a Company", href: "/formalize-company-brazil" },
+    { name: "How to open a Company", href: "/open-company-brazil" },
+    { name: "How to obtain a CNPJ", href: "/obtain-cnpj-brazil" },
+    { name: "How to Get a Business Permit", href: "/business-permit-brazil" },
+    { name: "Cost to Start Business", href: "/cost-start-business-brazil" },
+  ];
 
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
@@ -31,13 +30,19 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link
+              href="/"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
+            >
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link
+              href="/about"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
+            >
               About
             </Link>
-            
+
             {/* Services Dropdown */}
             <div className="relative">
               <button
@@ -47,10 +52,10 @@ export default function Navigation() {
                 Services
                 <ChevronDown className="w-4 h-4 ml-1" />
               </button>
-              
+
               {servicesOpen && (
                 <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
-                  <Link 
+                  <Link
                     href="/services"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 font-medium"
                     onClick={() => setServicesOpen(false)}
@@ -72,10 +77,13 @@ export default function Navigation() {
               )}
             </div>
 
-            <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link
+              href="/contact"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
+            >
               Contact
             </Link>
-            
+
             <Link href="/contact">
               <Button className="bg-blue-600 hover:bg-blue-700">
                 Get Consultation
@@ -89,7 +97,11 @@ export default function Navigation() {
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-gray-900 focus:outline-none"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -112,9 +124,11 @@ export default function Navigation() {
               >
                 About
               </Link>
-              
+
               <div className="space-y-1">
-                <div className="px-3 py-2 text-gray-900 font-medium">Services</div>
+                <div className="px-3 py-2 text-gray-900 font-medium">
+                  Services
+                </div>
                 <Link
                   href="/services"
                   className="block px-6 py-1 text-sm text-gray-700 hover:text-blue-600"
@@ -133,7 +147,7 @@ export default function Navigation() {
                   </Link>
                 ))}
               </div>
-              
+
               <Link
                 href="/contact"
                 className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
@@ -141,7 +155,7 @@ export default function Navigation() {
               >
                 Contact
               </Link>
-              
+
               <div className="px-3 pt-2">
                 <Link href="/contact" onClick={() => setIsOpen(false)}>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700">
@@ -156,11 +170,11 @@ export default function Navigation() {
 
       {/* Click outside to close services dropdown */}
       {servicesOpen && (
-        <div 
-          className="fixed inset-0 z-40" 
+        <div
+          className="fixed inset-0 z-40"
           onClick={() => setServicesOpen(false)}
         ></div>
       )}
     </nav>
-  )
+  );
 }
