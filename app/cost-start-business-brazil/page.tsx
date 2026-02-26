@@ -1,9 +1,10 @@
 import { Metadata } from "next";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { DollarSign, Calculator, TrendingUp, ArrowRight } from "lucide-react";
+import { routes } from "@/lib/routes";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -19,6 +20,9 @@ export const metadata: Metadata = {
     description:
       "Detailed cost analysis and financial planning guide for starting a business in Brazil with complete expense breakdown.",
     url: "https://startingabusinessinbrazil.com/cost-start-business-brazil",
+  },
+  alternates: {
+    canonical: routes.cost,
   },
 };
 

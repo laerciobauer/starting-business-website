@@ -1,8 +1,7 @@
 import { Metadata } from "next";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { routes } from "@/lib/routes";
 import {
   CheckCircle,
   ArrowRight,
@@ -10,6 +9,8 @@ import {
   Clock,
   FileText,
 } from "lucide-react";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,6 +25,9 @@ export const metadata: Metadata = {
     description:
       "Complete guide on how to obtain a CNPJ in Brazil. Expert assistance with Brazilian tax ID registration and application process.",
     url: "https://startingabusinessinbrazil.com/obtain-cnpj-brazil",
+  },
+  alternates: {
+    canonical: routes.obtain,
   },
 };
 

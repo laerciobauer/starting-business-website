@@ -1,9 +1,10 @@
 import { Metadata } from "next";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight, FileText, Clock, Shield } from "lucide-react";
+import { routes } from "@/lib/routes";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
     description:
       "Complete step-by-step guide to formalize a company in Brazil. Expert guidance through the entire business registration process.",
     url: "https://startingabusinessinbrazil.com/formalize-company-brazil",
+  },
+  alternates: {
+    canonical: routes.formalize,
   },
 };
 

@@ -1,8 +1,7 @@
 import { Metadata } from "next";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { routes } from "@/lib/routes";
 import {
   CheckCircle,
   ArrowRight,
@@ -10,6 +9,8 @@ import {
   AlertCircle,
   Building,
 } from "lucide-react";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,6 +25,9 @@ export const metadata: Metadata = {
     description:
       "Complete guide on obtaining all necessary business permits and licenses in Brazil for legal business operations.",
     url: "https://startingabusinessinbrazil.com/business-permit-brazil",
+  },
+  alternates: {
+    canonical: routes.business,
   },
 };
 

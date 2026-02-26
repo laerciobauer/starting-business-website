@@ -1,8 +1,7 @@
 import { Metadata } from "next";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { routes } from "@/lib/routes";
 import {
   FileText,
   Building2,
@@ -11,6 +10,8 @@ import {
   DollarSign,
   ArrowRight,
 } from "lucide-react";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
     description:
       "Comprehensive business consulting services for starting a company in Brazil. Expert guidance for all aspects of Brazilian business formation.",
     url: "https://startingabusinessinbrazil.com/services",
+  },
+  alternates: {
+    canonical: routes.services,
   },
 };
 
