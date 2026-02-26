@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "About Us - Starting a Business in Brazil Consulting Experts",
     description:
       "Learn about our expert team helping entrepreneurs start businesses in Brazil. Professional business consulting services with years of experience in Brazilian company formation.",
-    url: "https://startingabusinessinbrazil.com/about",
+    url: routes.about,
   },
   alternates: {
     canonical: routes.about,

@@ -9,7 +9,7 @@ import WhatsAppFloat from "@/components/whatsapp-float";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://startingabusinessinbrazil.com"),
+  metadataBase: new URL("https://www.startingabusinessinbrazil.com"),
   title: {
     default:
       "Starting a Business in Brazil - Expert Business Consulting Services",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://startingabusinessinbrazil.com",
+    url: routes.home,
     title:
       "Starting a Business in Brazil - Expert Business Consulting Services",
     description:

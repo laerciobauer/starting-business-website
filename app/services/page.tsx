@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Services - Complete Business Formation Solutions for Brazil",
     description:
       "Comprehensive business consulting services for starting a company in Brazil. Expert guidance for all aspects of Brazilian business formation.",
-    url: "https://startingabusinessinbrazil.com/services",
+    url: routes.services,
   },
   alternates: {
     canonical: routes.services,

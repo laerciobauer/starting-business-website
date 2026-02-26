@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Contact - Get Expert Brazilian Business Consulting Services",
     description:
       "Contact our Brazilian business consulting experts for professional guidance on company formation and legal compliance.",
-    url: "https://startingabusinessinbrazil.com/contact",
+    url: routes.contact,
   },
   alternates: {
     canonical: routes.contact,

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "Steps to Formalize a Company in Brazil - Complete Business Formation Guide",
     description:
       "Complete step-by-step guide to formalize a company in Brazil. Expert guidance through the entire business registration process.",
-    url: "https://startingabusinessinbrazil.com/formalize-company-brazil",
+    url: routes.formalize,
   },
   alternates: {
     canonical: routes.formalize,

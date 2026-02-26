@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "How to obtain a CNPJ - Brazilian Tax ID Registration Guide",
     description:
       "Complete guide on how to obtain a CNPJ in Brazil. Expert assistance with Brazilian tax ID registration and application process.",
-    url: "https://startingabusinessinbrazil.com/obtain-cnpj-brazil",
+    url: routes.obtain,
   },
   alternates: {
     canonical: routes.obtain,

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "How to Get a Business Permit - Brazilian Business License Guide",
     description:
       "Complete guide on obtaining all necessary business permits and licenses in Brazil for legal business operations.",
-    url: "https://startingabusinessinbrazil.com/business-permit-brazil",
+    url: routes.business,
   },
   alternates: {
     canonical: routes.business,

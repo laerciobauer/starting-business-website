@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "How to open a Company in Brazil - Complete Business Opening Guide",
     description:
       "Complete guide on how to open a company in Brazil. Expert guidance on business structures and legal requirements.",
-    url: "https://startingabusinessinbrazil.com/open-company-brazil",
+    url: routes.open,
   },
   alternates: {
     canonical: routes.open,

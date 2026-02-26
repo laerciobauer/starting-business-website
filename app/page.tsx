@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { routes } from "@/lib/routes";
 import HeroSection from "@/components/hero-section";
 import ServicesPreview from "@/components/services-preview";
 import WhyChooseUs from "@/components/why-choose-us";
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
       "Starting a Business in Brazil - Expert Business Consulting Services",
     description:
       "Expert consulting services to help you start a business in Brazil. Get professional guidance for company formation, CNPJ registration, business permits, and full legal compliance.",
-    url: "https://startingabusinessinbrazil.com",
+    url: routes.home,
   },
 };
 

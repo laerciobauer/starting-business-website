@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Cost to Start Business in Brazil - Complete Financial Planning Guide",
     description:
       "Detailed cost analysis and financial planning guide for starting a business in Brazil with complete expense breakdown.",
-    url: "https://startingabusinessinbrazil.com/cost-start-business-brazil",
+    url: routes.cost,
   },
   alternates: {
     canonical: routes.cost,
